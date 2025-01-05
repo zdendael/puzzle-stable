@@ -1,0 +1,31 @@
+export interface Puzzle {
+  id?: number;
+  name: string;
+  manufacturer: string;
+  pieces: number;
+  missing_pieces: number;
+  difficulty: 'unrated' | 'easy' | 'medium' | 'hard';
+  categories: string[];
+  image_url?: string;
+  acquisition_date: Date;
+  removal_date?: Date;
+  purchase_date?: Date;
+  price: number;
+  is_gift: boolean;
+  is_collaboration: boolean;
+  is_own_purchase: boolean;
+  in_collection: boolean;
+  notes: string;
+  tags: string[];
+  rating?: number;
+  created_at?: Date;
+  source?: Source;
+  youtube_url?: string;
+  sessions?: PuzzleSession[];
+  from_wishlist?: boolean;
+  deleted_at?: Date;
+  rating_date?: Date;
+  previous_rating?: number;
+  last_modified?: Date;
+  modified_fields?: string[];
+}
